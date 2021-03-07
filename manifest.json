@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "author": "Elisha Hollander",
+  "name": "YouSpeed",
+  "version": "1",
+  "description": "Use it at YouTube to speed up a video more than twice the normal speed",
+  "homepage_url": "https://github.com/donno2048/YouSpeed",
+  "icons": {"21": "icon.png"},
+  "browser_action": {"default_popup": "popup.html"},
+  "content_scripts": [{
+    "matches": ["*://*.YouTube.com/*"],
+    "js": ["background.js"]
+  }],
+  "permissions": ["storage"]
+}
